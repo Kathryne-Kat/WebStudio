@@ -1,5 +1,13 @@
 .gap-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  //   @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }

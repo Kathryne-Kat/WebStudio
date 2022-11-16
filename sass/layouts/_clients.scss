@@ -1,11 +1,23 @@
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .clients-list__element {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list__item {
   border: 1px solid var(--social-networks-icon);
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -22,6 +34,12 @@
     cursor: pointer;
     transition: border-color var(--time) var(--cubic),
       color var(--time) var(--cubic);
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 .logo-clients {
