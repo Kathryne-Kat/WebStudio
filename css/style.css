@@ -1,0 +1,45 @@
+/*скриває непотрібні заголовки*/
+
+/*---------header------------*/
+
+/*------hero---------*/
+
+/*------section---------*/
+
+/*-----feature----*/
+
+/*-----examples-----*/
+
+/*-----team-----*/
+
+/*-----clients-----*/
+
+/*-----footer-----*/
+
+/*-----portfolio-----*/
+
+/*------------BACKDROP------------------*/
+
+/* @keyframes first {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100%, 0);
+    color: orange;
+  }
+  50% {
+    transform: translate(-100%, 100%);
+    color: palevioletred;
+  }
+  75% {
+    transform: translate(0, 100%);
+    color: aqua;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.current {
+  animation: first 4s infinite;
+} */
