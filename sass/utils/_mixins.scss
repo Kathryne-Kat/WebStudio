@@ -1,0 +1,60 @@
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+  }
+}
+@mixin desktop() {
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+@mixin calc($count, $gap: 30px) {
+  width: calc((100% - $gap * ($count - 1)) / $count);
+}
+
+//від Макса//
+
+@mixin mq($type) {
+  $mobile: 480px;
+  $tablet: 768px;
+  $desktop: 1200px;
+
+  @if $type == "mob" {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  }
+
+  @if $type == "mob-only" {
+    @media screen and (max-width: ($tablet - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type == "tab" {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $type == "tab-only" {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type == "desk" {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $type == "not-desk" {
+    @media screen and (max-width: ($desktop - 0.02)) {
+      @content;
+    }
+  }
+}

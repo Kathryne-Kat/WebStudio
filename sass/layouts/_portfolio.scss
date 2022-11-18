@@ -1,12 +1,23 @@
 .portfolio-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
+  row-gap: 15px;
+  column-gap: 8px;
+  justify-content: flex-start;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .portfolio-button {
+  // flex-basis: calc((100% - 24px) / 3);
   padding: 6px 22px;
   background-color: var(--accent-text-color2);
   color: var(--title-text-color);
@@ -38,6 +49,10 @@
   position: relative;
   overflow: hidden;
 }
+.img-position-portfolio .img {
+  width: 100%;
+  height: auto;
+}
 
 .text-position-portfolio {
   position: absolute;
@@ -64,12 +79,29 @@
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .element-portfolio {
-  flex-basis: calc((100% - 60px) / 3);
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .element-portfolio-item {
   display: block;

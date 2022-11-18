@@ -22,9 +22,12 @@
     background-size: auto;
   }
 }
+.hero__container {
+  max-width: 100%;
+}
 .hero__title {
   display: block;
-  width: 360px;
+  width: 100%;
   display: block;
 
   margin-left: auto;
@@ -38,6 +41,9 @@
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {

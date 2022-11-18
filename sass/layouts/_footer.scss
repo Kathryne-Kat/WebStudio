@@ -11,7 +11,21 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+  }
+}
+.add-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 .social-networks-footer {
@@ -19,6 +33,9 @@
   margin-right: auto;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
@@ -66,9 +83,9 @@
   margin-top: 20px;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
   }
 }
 .contacts.footer > li:not(:last-child) {
@@ -120,6 +137,8 @@
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
     margin-left: 93px;
   }
 }
@@ -128,7 +147,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  width: 450px;
+  width: 100%;
   height: 50px;
 
   border-radius: 4px;
@@ -154,6 +173,9 @@
     outline: transparent;
     border-color: var(--primary-text-color);
     cursor: pointer;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
   }
   @media screen and (min-width: 768px) {
   }
