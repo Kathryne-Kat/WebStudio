@@ -52,7 +52,7 @@
             +38 096 111 11 11
           </a>
         </div>
-        <button type="button" class="menu-open">
+        <button type="button" class="menu-open" data-menu-open>
           <svg
             width="40"
             height="40"
@@ -63,8 +63,8 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
-        <button type="button" class="menu-close">
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close" data-menu-close>
           <svg
             width="40"
             height="40"
@@ -90,29 +90,31 @@
             </li>
           </ul>
         </nav>
-        <div class="contacts-mob">
-          <a class="contacts-mob__link" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
-          <a class="contacts-mob__link" href="tel:+380961111111">
-            +38 096 111 11 11
-          </a>
-        </div>
-        <div class="social-net-menu">
-          <ul class="social-net-menu__list">
-            <li class="social-net-menu__link">
-              <a class="social-net-menu__item" href="#"> Instagram </a>
-            </li>
-            <li class="social-net-menu__link">
-              <a class="social-net-menu__item" href="#"> Twitter </a>
-            </li>
-            <li class="social-net-menu__link">
-              <a class="social-net-menu__item" href="#"> Facebook </a>
-            </li>
-            <li class="social-net-menu__link">
-              <a class="social-net-menu__item" href="#"> LinkedIn </a>
-            </li>
-          </ul>
+        <div class="container-mob">
+          <div class="contacts-mob">
+            <a class="contacts-mob__link tel" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+            <a class="contacts-mob__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </div>
+          <div class="social-net-menu">
+            <ul class="social-net-menu__list">
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> Instagram </a>
+              </li>
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> Twitter </a>
+              </li>
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> Facebook </a>
+              </li>
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -166,10 +168,12 @@
           <ul class="work__list gap-list">
             <li class="work__item">
               <img
-                src="./images/box1.jpg"
+                srcset="
+                  ./images/cont/work-1.jpg    1x,
+                  ./images/cont/work-1-2x.jpg 2x
+                "
+                src="./images/cont/work-1.jpg"
                 alt="комп'ютер"
-                width="370"
-                height="294"
               />
               <div class="work__text-position">
                 <p>Десктопні додатки</p>
@@ -177,10 +181,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/box2.jpg"
-                alt="мобільний"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/cont/work-2.jpg    1x,
+                  ./images/cont/work-2-2x.jpg 2x
+                "
+                src="./images/cont/work-2.jpg"
+                alt="комп'ютер"
               />
               <div class="work__text-position">
                 <p>Мобільні додатки</p>
@@ -188,10 +194,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/box3.jpg"
-                alt="планшет"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/cont/work-3.jpg    1x,
+                  ./images/cont/work-3-2x.jpg 2x
+                "
+                src="./images/cont/work-3.jpg"
+                alt="комп'ютер"
               />
               <div class="work__text-position">
                 <p>Дизайнерські рішення</p>
@@ -206,11 +214,16 @@
           <ul class="team__list gap-list">
             <li class="team__item">
               <img
-                src="./images/photo1.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-                class="team__img"
+                srcset="
+                  ./images/cont/team-1-mob.jpg     450w,
+                  ./images/cont/team-1-mob-2x.jpg  900w,
+                  ./images/cont/team-1-tab.jpg     354w,
+                  ./images/cont/team-1-tab-2x.jpg  708w,
+                  ./images/cont/team-1-desk.jpg    270w,
+                  ./images/cont/team-1-desk-2x.jpg 540w
+                "
+                src="./images/cont/team-1-mob.jpg "
+                alt="photo"
               />
               <div class="team__text">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -251,11 +264,16 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/photo2.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-                class="team__img"
+                srcset="
+                  ./images/cont/team-2-mob.jpg     450w,
+                  ./images/cont/team-2-mob-2x.jpg  900w,
+                  ./images/cont/team-2-tab.jpg     354w,
+                  ./images/cont/team-2-tab-2x.jpg  708w,
+                  ./images/cont/team-2-desk.jpg    270w,
+                  ./images/cont/team-2-desk-2x.jpg 540w
+                "
+                src="./images/cont/team-2-mob.jpg "
+                alt="photo"
               />
               <div class="team__text">
                 <h3 class="team__name">Ольга Рєпіна</h3>
@@ -296,11 +314,16 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/photo3.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-                class="team__img"
+                srcset="
+                  ./images/cont/team-3-mob.jpg     450w,
+                  ./images/cont/team-3-mob-2x.jpg  900w,
+                  ./images/cont/team-3-tab.jpg     354w,
+                  ./images/cont/team-3-tab-2x.jpg  708w,
+                  ./images/cont/team-3-desk.jpg    270w,
+                  ./images/cont/team-3-desk-2x.jpg 540w
+                "
+                src="./images/cont/team-3-mob.jpg "
+                alt="photo"
               />
               <div class="team__text">
                 <h3 class="team__name">Микола Тарасов</h3>
@@ -341,11 +364,16 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/photo4.jpg"
-                alt="фото"
-                width="270"
-                height="260"
-                class="team__img"
+                srcset="
+                  ./images/cont/team-4-mob.jpg     450w,
+                  ./images/cont/team-4-mob-2x.jpg  900w,
+                  ./images/cont/team-4-tab.jpg     354w,
+                  ./images/cont/team-4-tab-2x.jpg  708w,
+                  ./images/cont/team-4-desk.jpg    270w,
+                  ./images/cont/team-4-desk-2x.jpg 540w
+                "
+                src="./images/cont/team-4-mob.jpg "
+                alt="photo"
               />
               <div class="team__text">
                 <h3 class="team__name">Михайло Єрмаков</h3>

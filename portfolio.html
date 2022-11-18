@@ -48,6 +48,70 @@
             +38 096 111 11 11
           </a>
         </div>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg
+            width="40"
+            height="40"
+            aria-label="перемикач меню"
+            class="menu-icon"
+          >
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close" data-menu-close>
+          <svg
+            width="40"
+            height="40"
+            aria-label="перемикач меню"
+            class="menu-icon"
+          >
+            <use
+              class="icon-close-menu"
+              href="./images/sprite.svg#icon-close-m"
+            ></use>
+          </svg>
+        </button>
+        <nav class="nav-mob">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link">Студія</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container-mob">
+          <div class="contacts-mob">
+            <a class="contacts-mob__link tel" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+            <a class="contacts-mob__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </div>
+          <div class="social-net-menu">
+            <ul class="social-net-menu__list">
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> Instagram </a>
+              </li>
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> Twitter </a>
+              </li>
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> Facebook </a>
+              </li>
+              <li class="social-net-menu__link">
+                <a class="social-net-menu__item" href="#"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -363,5 +427,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
