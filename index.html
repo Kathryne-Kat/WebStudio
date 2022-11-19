@@ -80,7 +80,7 @@
         <nav class="nav-mob">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студія</a>
+              <a href="./index.html" class="nav-list__link current-mob">Студія</a>
             </li>
             <li class="nav-list__item">
               <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
@@ -169,7 +169,7 @@
             <li class="work__item">
               <img
                 srcset="
-                  ./images/cont/work-1.jpg    1x,
+                  ./images/cont/work-1.jpg 1x,
                   ./images/cont/work-1-2x.jpg 2x
                 "
                 src="./images/cont/work-1.jpg"
@@ -182,7 +182,7 @@
             <li class="work__item">
               <img
                 srcset="
-                  ./images/cont/work-2.jpg    1x,
+                  ./images/cont/work-2.jpg 1x,
                   ./images/cont/work-2-2x.jpg 2x
                 "
                 src="./images/cont/work-2.jpg"
@@ -195,7 +195,7 @@
             <li class="work__item">
               <img
                 srcset="
-                  ./images/cont/work-3.jpg    1x,
+                  ./images/cont/work-3.jpg 1x,
                   ./images/cont/work-3-2x.jpg 2x
                 "
                 src="./images/cont/work-3.jpg"
@@ -213,18 +213,28 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list gap-list">
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/cont/team-1-mob.jpg     450w,
-                  ./images/cont/team-1-mob-2x.jpg  900w,
-                  ./images/cont/team-1-tab.jpg     354w,
-                  ./images/cont/team-1-tab-2x.jpg  708w,
-                  ./images/cont/team-1-desk.jpg    270w,
-                  ./images/cont/team-1-desk-2x.jpg 540w
-                "
+              <img src="" alt="">
+              <picture>
+                <source    srcset="
+                ./images/cont/team-1-desk.jpg 1x,
+                ./images/cont/team-1-desk-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source    srcset="
+                ./images/cont/team-1-tab.jpg 1x,
+                  ./images/cont/team-1-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source    srcset="
+                ./images/cont/team-1-mob.jpg 1x,
+                ./images/cont/team-1-mob-2x.jpg 2x"
+                media="(min-width:480px)"/>
+                <img             
                 src="./images/cont/team-1-mob.jpg "
                 alt="photo"
+                width="450"
+                height="460"
               />
+              </picture>
+  
               <div class="team__text">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__profession">Product Designer</p>
@@ -263,18 +273,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/cont/team-2-mob.jpg     450w,
-                  ./images/cont/team-2-mob-2x.jpg  900w,
-                  ./images/cont/team-2-tab.jpg     354w,
-                  ./images/cont/team-2-tab-2x.jpg  708w,
-                  ./images/cont/team-2-desk.jpg    270w,
-                  ./images/cont/team-2-desk-2x.jpg 540w
-                "
+              <picture>
+                <source    srcset="
+                ./images/cont/team-2-desk.jpg 1x,
+                ./images/cont/team-2-desk-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source    srcset="
+                ./images/cont/team-2-tab.jpg 1x,
+                  ./images/cont/team-2-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source    srcset="
+                ./images/cont/team-2-mob.jpg 1x,
+                ./images/cont/team-2-mob-2x.jpg 2x"
+                media="(min-width:480px)"/>
+                <img             
                 src="./images/cont/team-2-mob.jpg "
                 alt="photo"
+                width="450"
+                height="460"
               />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__profession">Frontend Developer</p>
@@ -313,18 +331,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/cont/team-3-mob.jpg     450w,
-                  ./images/cont/team-3-mob-2x.jpg  900w,
-                  ./images/cont/team-3-tab.jpg     354w,
-                  ./images/cont/team-3-tab-2x.jpg  708w,
-                  ./images/cont/team-3-desk.jpg    270w,
-                  ./images/cont/team-3-desk-2x.jpg 540w
-                "
+              <picture>
+                <source    srcset="
+                ./images/cont/team-3-desk.jpg 1x,
+                ./images/cont/team-3-desk-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source    srcset="
+                ./images/cont/team-3-tab.jpg 1x,
+                  ./images/cont/team-3-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source    srcset="
+                ./images/cont/team-3-mob.jpg 1x,
+                ./images/cont/team-3-mob-2x.jpg 2x"
+                media="(min-width:480px)"/>
+                <img             
                 src="./images/cont/team-3-mob.jpg "
                 alt="photo"
+                width="450"
+                height="460"
               />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__profession">Marketing</p>
@@ -363,18 +389,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="
-                  ./images/cont/team-4-mob.jpg     450w,
-                  ./images/cont/team-4-mob-2x.jpg  900w,
-                  ./images/cont/team-4-tab.jpg     354w,
-                  ./images/cont/team-4-tab-2x.jpg  708w,
-                  ./images/cont/team-4-desk.jpg    270w,
-                  ./images/cont/team-4-desk-2x.jpg 540w
-                "
+              <picture>
+                <source    srcset="
+                ./images/cont/team-4-desk.jpg 1x,
+                ./images/cont/team-4-desk-2x.jpg 2x"
+                media="(min-width:1200px)"/>
+                <source    srcset="
+                ./images/cont/team-4-tab.jpg 1x,
+                  ./images/cont/team-4-tab-2x.jpg 2x"
+                media="(min-width:768px)"/>
+                <source    srcset="
+                ./images/cont/team-4-mob.jpg 1x,
+                ./images/cont/team-4-mob-2x.jpg 2x"
+                media="(min-width: 480px)"/>
+                <img             
                 src="./images/cont/team-4-mob.jpg "
                 alt="photo"
+                width="450"
+                height="460"
               />
+              </picture>
               <div class="team__text">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__profession">UI Designer</p>

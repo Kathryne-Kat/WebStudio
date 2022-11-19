@@ -721,6 +721,11 @@ body {
   border-radius: 2px;
 }
 
+.current-mob {
+  position: relative;
+  color: var(--accent-text-color);
+}
+
 @media screen and (max-width: 767px) {
   .contacts.header {
     position: absolute;
@@ -1096,6 +1101,7 @@ body {
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;

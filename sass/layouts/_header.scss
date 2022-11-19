@@ -217,6 +217,10 @@
     border-radius: 2px;
   }
 }
+.current-mob {
+  position: relative;
+  color: var(--accent-text-color);
+  }
 
 .contacts.header {
   @media screen and (max-width: 767px) {
